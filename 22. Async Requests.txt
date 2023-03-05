@@ -1,0 +1,17 @@
+347. Module Introduction
+    - All the requests we worked up to now were sent from a browser, and the response was always a redirect or a html page
+
+    - There are some responses that can only exchange data
+        - That's what this module is all about
+
+348. What are Async Requests?
+    - Summing up, send some data in request, and receive some data back, without reloading the page
+
+349. Adding Client Side JS Code
+    * Now, when we delete an item, we will update our database, and then create a new request to load our page;
+        * We will modify it to, when we delete a product, we delete from the backend and delete it from our DOM
+    
+    * We create a admin.js file in the public folder (that will run in the browser)
+
+    - We started creating a function that will get product info from the DOM elements
+    
