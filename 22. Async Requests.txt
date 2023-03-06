@@ -14,4 +14,19 @@
     * We create a admin.js file in the public folder (that will run in the browser)
 
     - We started creating a function that will get product info from the DOM elements
+
+351. Sending & Handling Background Requests
+    - We were only working with get and post requests, because they are native from the browsers (html files);
+
+    - As now we are working with javascript code, we should set another http methods
+        * As we define our logic, we could simply work with post... But using delete (or others) will be more precise
+        - Now we will work with delete method
+
+    Steps:
+        1. We updated the route to router.delete (instead of router.post)
+        2. We updated the logic in the controller:
+            a. Now we get the id from the params (we set it in the view file)
+                * Important to remember that delete http method does not have req.body
+            b. set the response to return a JSON object, instead of redirecting a view
+        3. In the public admin.js file, we created the logic to get the DOM elements and update them ()
     
